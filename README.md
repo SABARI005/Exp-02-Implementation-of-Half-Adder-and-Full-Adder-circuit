@@ -38,17 +38,58 @@ If the output is 1, then the led glows.
 Program:
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by:SABARI S 
+RegisterNumber:  212222240085
 */
+## HALF ADDER:
+```
+module exp33(a,b,s,c);
+input a,b;
+output s,c;
+assign s=a^b;
+assign c=a&b;
+endmodule
+```
+## FULL ADDER:
+```
+module ass3(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum=a^b^c;
+assign carry= ((a&b)|(b&c)|(c&a));
+endmodule
+```
+
 Logic symbol & Truthtable
 RTL realization
-
 ### Output:
 ### RTL
+## HALF ADDER
+```
+![264913765-084d609b-1bb0-4f47-82fe-3fb1dda94395](https://github.com/SABARI005/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118660461/57b51d3f-d848-4faa-8d26-d2ea4fe0365e)
+```
+## FULL ADDER
+```
+![264913797-6ca1e10c-a439-49f7-b7cb-cb7ed7b5e66e](https://github.com/SABARI005/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118660461/24b3d98a-856d-4b3c-b0f6-94b8c50c4393)
+```
 ### TIMING DIAGRAM
-
-
+## HALF ADDER
+```
+![264914200-95eccf36-94f9-4925-ad15-82c9579880aa](https://github.com/SABARI005/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118660461/b70caff0-5158-451d-a511-6ed4d605b773)
+```
+## FUL ADDER
+```
+![264913964-863312c7-17df-4b4c-9958-768cbbcf34e6](https://github.com/SABARI005/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118660461/7ace7d75-78c1-48a5-9ec0-4226d6c4e847)
+```
 ### TRUTH TABLE 
+## HALF ADDER
+```
+![264914641-9cd28690-b0b2-4e1f-8f6a-dcf9a657d344](https://github.com/SABARI005/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118660461/ec3a078b-e401-497f-8048-beabd2cdbf6c)
+```
+## FULL ADDER
+```
+![264914661-bb1b445a-65fa-4c1f-80fe-aca2993690f6](https://github.com/SABARI005/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118660461/9675f1e5-6056-4d20-b70f-6a8b7352563d)
+```
 
 ### Result:
+Thus the half adder and full adder are studied and the truth table for different logic gates are verified.
